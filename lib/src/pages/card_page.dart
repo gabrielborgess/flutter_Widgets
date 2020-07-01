@@ -8,7 +8,9 @@ class  CardPage extends StatelessWidget {
       body: ListView(
         padding: EdgeInsets.all(10.0),
         children: <Widget>[
-          _cardTipo1()
+          _cardTipo1(),
+          SizedBox(height: 30.0,),
+          _cardTipo2(),
         ],
       ),
     );
@@ -39,6 +41,29 @@ class  CardPage extends StatelessWidget {
               ),
             ],
           ),
+        ],
+      ),
+    );
+  }
+
+  Widget _cardTipo2() {
+    return Card(
+      child:Column(
+        children: <Widget>[
+//          Image(
+//            image: NetworkImage('https://static.vecteezy.com/system/resources/thumbnails/000/246/312/original/mountain-lake-sunset-landscape-first-person-view.jpg'),
+//          ),
+        FadeInImage(image: NetworkImage('https://static.vecteezy'
+            '.com/system/resources/thumbnails/000/246/312/original/mountain'
+            '-lake-sunset-landscape-first-person-view.jpg'),
+          placeholder: AssetImage('assets/jar-loading.gif'),
+          fadeInDuration: Duration(milliseconds: 200),
+          height: 300.0,
+          fit: BoxFit.cover,
+        ),
+          Container(
+            child: Text('Hello wrold'),
+            padding: EdgeInsets.all(10.0),)
         ],
       ),
     );
