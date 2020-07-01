@@ -30,6 +30,7 @@ class  HomePage extends StatelessWidget {
   }
 
   List<Widget> _mostrarlista(List<dynamic> data,BuildContext context) {
+
     final List<Widget> opciones=[];
 
     data.forEach((element) {
@@ -39,13 +40,13 @@ class  HomePage extends StatelessWidget {
         trailing: Icon(Icons.keyboard_arrow_right),
         onTap: (){
 
-          final route=MaterialPageRoute(
-            builder: (context)=>AlertPage()
-
-          );
-
-          Navigator.push(context,route);
-
+//          final route=MaterialPageRoute(
+//            builder: (context)=>AlertPage()
+//
+//          );
+//
+//          Navigator.push(context,route);
+        Navigator.pushNamed(context,element['ruta']);
 
         },
       );
