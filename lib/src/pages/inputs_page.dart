@@ -30,7 +30,7 @@ class _InputPageState extends State<InputPage> {
 //      autofocus: true,
           textCapitalization: TextCapitalization.sentences,
           decoration: InputDecoration(
-          counter: Text('Cantidad de letras 0'),
+          counter: Text('Cantidad de letras ${_nombre.length}'),
           hintText: 'Ejemplo: Gabriel borges',
           labelText: 'Nombre',
           helperText: 'Si no sabes tu nombre inventalo',
