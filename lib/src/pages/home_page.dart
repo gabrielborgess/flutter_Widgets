@@ -47,7 +47,6 @@ class  HomePage extends StatelessWidget {
 //
 //          Navigator.push(context,route);
         Navigator.pushNamed(context,element['ruta']);
-
         },
       );
       opciones..add(widgetTemp)
